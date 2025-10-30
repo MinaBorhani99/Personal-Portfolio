@@ -55,6 +55,131 @@ nav .right a span {
   margin-left: 5px;
 }
 
+/* section 1: Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 10px;
+}
+
+.hero .text {
+  flex: 5;
+}
+
+.hero .text h2 {
+  font-size: 45px;
+}
+.hero .text .link {
+  margin-top: 25px;
+}
+
+.hero .text .link a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.hero .text .link a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero .headShot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero .headShot img {
+  border-radius: 50%;
+  width: 350px;
+}
+/* section 1: Hero */
+@media (max-width: 850px) {
+  .hero .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .headShot img {
+    width: 300px;
+  }
+}
+/* section 1: Hero */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 10px;
+}
+
+.hero .text {
+  flex: 5;
+}
+
+.hero .text h2 {
+  font-size: 45px;
+}
+.hero .text .link {
+  margin-top: 25px;
+}
+
+.hero .text .link a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  transition: 0.1s;
+}
+
+.hero .text .link a:hover {
+  color: var(--text-color);
+  border: 2px solid var(--text-color);
+}
+
+.hero .headShot {
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+
+.hero .headShot img {
+  border-radius: 50%;
+  width: 350px;
+}
+/* section 1: Hero */
+@media (max-width: 850px) {
+  .hero .text h2 {
+    font-size: 35px;
+  }
+}
+
+@media (max-width: 750px) {
+  .hero {
+    flex-direction: column-reverse;
+  }
+  .hero .headShot img {
+    width: 300px;
+  }
+}
+
 @media (max-width: 600px) {
   /* navbar */
   nav {
@@ -70,5 +195,12 @@ nav .right a span {
   }
   nav .right a span {
     display: none;
+  }
+  /* section 1: Hero */
+  .hero {
+    padding: 0 20px;
+  }
+  .hero .text h2 {
+    font-size: 30pxx;
   }
 }

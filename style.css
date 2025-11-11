@@ -17,6 +17,8 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--background-color);
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 a {
@@ -150,7 +152,7 @@ nav .right a span {
 /* section 3: testimony */
 .testimony-section {
   padding: 0 50px;
-  padding-bottom: 100;
+  padding-bottom: 100px;
 }
 
 .testimony-section h2 {
@@ -188,6 +190,55 @@ nav .right a span {
   flex: 8;
 }
 
+/* section 4: content */
+.content-section {
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+
+.content-section h2 {
+  font-size: 35px;
+}
+
+.content-section .group {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.content-section .group .text {
+  flex: 3;
+}
+
+.content-section .group form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-section .group form input,
+.content-section .group form textarea {
+  border: 2px solid var(--link-color);
+  background-color: transparent;
+  padding: 10px;
+  margin: 15px;
+  outline: none;
+  resize: none;
+}
+
+.content-section .group form button {
+  font-size: 16px;
+  background-color: var(--link-color);
+  color: #fff;
+  border: none;
+  height: 50px;
+  transition: 0.1s;
+}
+
+.content-section .group form button:hover {
+  filter: brightness(0.9);
+}
+
 /* section 1: Hero */
 @media (max-width: 850px) {
   .hero .text h2 {
@@ -204,10 +255,14 @@ nav .right a span {
   }
 
   /* section 3: testimony */
-  .testimony-section{
+  .testimony-section {
     text-align: center;
   }
-  .testimony-section .group{
+  .testimony-section .group {
+    flex-direction: column;
+  }
+  /* section 4: content */
+  .content-section .group {
     flex-direction: column;
   }
 }
@@ -303,5 +358,13 @@ nav .right a span {
   }
   .sectionSkills .cells .cell span {
     font-size: 16px;
+  }
+  /* section 3: testimony */
+  .testimony-section {
+    padding: 0 20px;
+  }
+  /* section 4: content */
+  .content-section {
+    padding: 0 20px;
   }
 }
